@@ -22,6 +22,7 @@ Key Features & Fixes:
 4. Seamless Audio Stream: Optimized buffer rolling and resampling logic to ensure stable, long-duration execution without audio degradation or "robotic" accumulation effects.
 
 ---------------------------------
+[real-time-demo.webm](https://github.com/user-attachments/assets/86325c5e-f7f6-4a04-8695-97275a5d046c)
 Currently released model supports *zero-shot voice conversion* 🔊 , *zero-shot real-time voice conversion* 🗣️ and *zero-shot singing voice conversion* 🎶. Without any training, it is able to clone a voice given a reference speech of 1~30 seconds.  
 
 We support further fine-tuning on custom data to increase performance on specific speaker/speakers, with extremely low data requirement **(minimum 1 utterance per speaker)** and extremely fast training speed **(minimum 100 steps, 2 min on T4)**!
