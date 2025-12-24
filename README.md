@@ -3,8 +3,24 @@
 
 *English | [简体中文](README-ZH.md) | [日本語](README-JA.md)*  
 
-[real-time-demo.webm](https://github.com/user-attachments/assets/86325c5e-f7f6-4a04-8695-97275a5d046c)
+<img width="923" height="528" alt="image" src="https://github.com/user-attachments/assets/008b26bd-38df-472e-aec8-e4c529c8caba" />
 
+Seed-VC Real-Time GUI: High-Efficiency & Low-CPU Optimization
+
+This fork focuses on optimizing the real-time inference GUI for Seed-VC, specifically targeting Windows users who need to run heavy background applications (like VRChat or Games) simultaneously.
+I only modified real-time-gui.py, so you can simply replace this file to the original seed-vc
+
+Key Features & Fixes:
+
+1. Ultra-Low CPU Usage: RTF (Real Time Factor) reduced to ~0.014. By replacing the heavy AI VAD and optimizing the data pipeline, CPU usage is minimized, allowing concurrent execution with other high-demand software.
+
+2. Microphone Gain Control: Integrated a "Mic Gain" slider (0.3x to 5.0x) allowing users to digitally boost or attenuate their input signal before processing.
+
+3. Precision Stability: Enforced Float32 precision during the SOLA (Synchronous Overlap-Add) phase to prevent mixed-precision crashes while maintaining GPU acceleration.
+
+4. Seamless Audio Stream: Optimized buffer rolling and resampling logic to ensure stable, long-duration execution without audio degradation or "robotic" accumulation effects.
+
+---------------------------------
 Currently released model supports *zero-shot voice conversion* 🔊 , *zero-shot real-time voice conversion* 🗣️ and *zero-shot singing voice conversion* 🎶. Without any training, it is able to clone a voice given a reference speech of 1~30 seconds.  
 
 We support further fine-tuning on custom data to increase performance on specific speaker/speakers, with extremely low data requirement **(minimum 1 utterance per speaker)** and extremely fast training speed **(minimum 100 steps, 2 min on T4)**!
