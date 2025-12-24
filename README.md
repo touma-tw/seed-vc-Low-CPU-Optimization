@@ -9,7 +9,7 @@ Seed-VC Real-Time GUI: High-Efficiency & Low-CPU Optimization
 
 This fork focuses on optimizing the real-time inference GUI for Seed-VC, specifically targeting Windows users who need to run heavy background applications (like VRChat or Games) simultaneously.
 
-I only modified real-time-gui.py, so you can simply replace this file to the original seed-vc
+I only modified real-time-gui.py with Gemini's help, so you can simply replace this file to the original seed-vc
 
 Key Features & Fixes:
 
