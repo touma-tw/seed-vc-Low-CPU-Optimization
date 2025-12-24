@@ -1,7 +1,7 @@
 # Seed-VC  
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-blue)](https://huggingface.co/spaces/Plachta/Seed-VC)  [![arXiv](https://img.shields.io/badge/arXiv-2411.09943-<COLOR>.svg)](https://arxiv.org/abs/2411.09943)
 
-*English | [中文](README-ZH.md) | [日本語](README-JA.md)*  
+*[English](README.md) | [中文] | [日本語](README-JA.md)*  
 
 <img width="916" height="528" alt="image" src="https://github.com/user-attachments/assets/70c23903-cf81-4153-b495-89b4761fd5b8" />
 
