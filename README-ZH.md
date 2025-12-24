@@ -1,7 +1,23 @@
 # Seed-VC  
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-blue)](https://huggingface.co/spaces/Plachta/Seed-VC)  [![arXiv](https://img.shields.io/badge/arXiv-2411.09943-<COLOR>.svg)](https://arxiv.org/abs/2411.09943)
 
-*English | [简体中文](README-ZH.md) | [日本語](README-JA.md)*  
+*English | [中文](README-ZH.md) | [日本語](README-JA.md)*  
+
+<img width="916" height="528" alt="image" src="https://github.com/user-attachments/assets/70c23903-cf81-4153-b495-89b4761fd5b8" />
+
+此 Fork 版本專為優化 Seed-VC 的即時推論 GUI 而設計，特別針對需要同時運行高負載背景應用程式（如 VRChat 或遊戲）的 Windows 使用者。
+
+核心功能與修復：
+
+1. 極低 CPU 佔用： 實時率（RTF）降低至約 0.014。透過取代沉重的 AI VAD（語音活動偵測）並優化數據流水線，大幅減少了 CPU 消耗，使其能與其他高需求軟體同時流暢運行。
+
+2. 麥克風增益控制： 整合了「Mic Gain」增益滑桿（0.3x 至 5.0x），讓使用者在處理前能以數位方式放大或減弱輸入訊號。
+
+3. 高精度穩定性： 在 SOLA（同步疊加相加）階段強制執行 Float32 精度，在保持 GPU 加速的同時，防止混合精度導致的程式崩潰。
+
+4. 無縫音訊流： 優化了緩衝滾動與重採樣邏輯，確保長期穩定運行，避免音質受損或出現「機器人音」般的累積效應。
+
+--------------------------
 
 [real-time-demo.webm](https://github.com/user-attachments/assets/86325c5e-f7f6-4a04-8695-97275a5d046c)
 
